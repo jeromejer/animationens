@@ -1,0 +1,83 @@
+.logo {
+    width: 200px;
+    height: 230px;
+    background-color: #eee;
+    position: relative;
+    animation: animation-logo 2.3s;
+    animation-fill-mode: both;
+}
+
+.logo_img {
+    width: 33%;
+    height: auto;
+    top: 33%;
+    left: 33%;
+    position: absolute;
+    animation: icon 3.2s;
+    animation-fill-mode: both;
+}
+
+.logo2 {
+    animation: logo2 3.2s;
+    animation-fill-mode: both;
+}
+
+
+@keyframes animation-logo {
+    0% {
+        clip-path: polygon(100% 0%, 100% 25%, 100% 100%, 50% 100%, 0% 100%, 0% 0%)
+    }
+    25% {
+        clip-path: polygon(50% 0%, 100% 25%, 100% 100%, 50% 100%, 0% 100%, 0% 0%)
+    }
+
+    50% {
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75.43%, 50% 100%, 0% 100%, 0% 0%)
+    }
+
+    75% {
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75.43%, 50% 100%, 0% 75.43%, 0% 0%)
+    }
+
+    100% {
+        clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100% , 0% 75%)
+    }
+
+}
+
+@keyframes logo2 {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes icon {
+    0% {
+        transform: none;
+    }
+
+    75% {
+        transform: none;
+    }
+    
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+clip-path: polygon(50% 0%, 100% 25%, 100% 75.43%, 50% 100%, 0% 75.43%, -1000% 25%);
